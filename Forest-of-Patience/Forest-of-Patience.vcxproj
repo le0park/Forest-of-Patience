@@ -79,8 +79,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>d:\leo\Visual Studio 2017\Projects\Forest-of-Patience\SFML-2.4.2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>d:\leo\Visual Studio 2017\Projects\Forest-of-Patience\SFML-2.4.2\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\SFML-2.4.2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\SFML-2.4.2\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>d:\leo\Visual Studio 2017\Projects\Forest-of-Patience\SFML-2.4.2\include;$(IncludePath)</IncludePath>
@@ -92,13 +92,13 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>d:\leo\Visual Studio 2017\Projects\Forest-of-Patience\SFML-2.4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\SFML-2.4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <AdditionalLibraryDirectories>d:\leo\Visual Studio 2017\Projects\Forest-of-Patience\SFML-2.4.2\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\SFML-2.4.2\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
